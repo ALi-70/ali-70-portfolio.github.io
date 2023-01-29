@@ -1,0 +1,175 @@
+
+/*NAVBAR STYLES*/
+
+  .navbar{
+    /* Created with https://www.css-gradient.com */
+    background: #000000;
+    background: -webkit-linear-gradient(left, #000000, #FF0000);
+    background: -moz-linear-gradient(left, #000000, #FF0000);
+    background: linear-gradient(to right, #000000, #FF0000);
+  }
+
+  .navbar-heading a{
+    font-family: museomoderno;
+    font-weight:lighter;
+    color: #fff;
+    
+  }
+
+  .navbar-heading a:hover{
+    color: #ff0000;
+  }
+
+
+
+  .navbar-brand{
+    font-size: 30px !important;
+    font-family: museomoderno;
+
+  }
+
+
+
+  .ali-icon img{
+  width: 50px;
+  }
+
+  .navbar-toggler{
+    color: #fff;
+  }
+
+  .btn-outline-success{
+    background: #000;
+    border-color: #fff;
+    border-width: 1.5px;
+    
+    color:#fff;
+    font-family: museomoderno;
+  }
+
+  .btn-outline-success:hover{
+    border-color: #fff;
+    background: none;
+  }
+
+  .srch-input{
+    font-family: museomoderno;
+
+  }
+
+  .srch-input .form-control:focus{
+    border-color: #C68B59;
+  }
+
+  .bi-caret-down-fill{
+    font-size: 37px;
+  }
+/*NAVBAR STYLES Ends*/
+
+
+
+/* Created with https://www.css-gradient.com */
+/*background: #000000;
+background: -webkit-linear-gradient(left, #000000, #FF0000);
+background: -moz-linear-gradient(left, #000000, #FF0000);
+background: linear-gradient(to right, #000000, #FF0000);*/
+
+
+
+/*HEADER STYLES*/
+.ali-name{
+  font-size: 37px;
+  text-align: center;
+  font-weight: bold;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "museomoderno", Helvetica, Arial, sans-serif;
+  /*text-transform: uppercase;*/
+  font-weight: 700;
+  
+}
+
+
+header {
+  height: 100vh;
+  /*background-image: url(https://images.unsplash.com/photo-1540397106260-e24a507a08ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=761&q=80);*/
+  background: url("../img/web_dev_bg.png");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+}
+
+header::after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+header p {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;-tile
+}
+
+/*HEADER STYLES END*/
+
+
+
+
+
+
+/*FOOTER STYLES*/
+
+footer{
+  background: #343a40;
+
+}
+
+
+.icon-facebook{
+  border-radius: 100px;
+  border:none;
+  width: 36px;
+  background: #4267B2;
+}
+
+
+.icon-instagram{
+  border-radius: 100px;
+  border:none;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+  font-weight: bold;
+}
+
+.icon-linkedin{
+  border-radius: 100px;
+  border:none;
+  background: #0077B5;
+}
+
+.copyright-text{
+  background-color: rgba(0, 0, 0, 1);
+}
+/*FOOTER STYLES END*/
