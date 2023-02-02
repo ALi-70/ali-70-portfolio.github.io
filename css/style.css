@@ -136,6 +136,49 @@ header p {
 
 
 
+/*PROJECT STYLES START*/
+
+.project-heading{
+  font-family: museomoderno;
+  color: #fff;
+  text-align: center;
+}
+
+.projects-bg{
+    background: #000000;
+    background: -webkit-linear-gradient(left, #000000, #FF0000);
+    background: -moz-linear-gradient(left, #000000, #FF0000);
+    background: linear-gradient(to right, #000000, #FF0000);
+}
+
+.project-tab1{
+  /*background-image: url('img/fruits_narmada_agri.png');
+  background-size: cover;*/
+  height: 190px;
+    width: 100%;
+
+}
+
+
+
+
+.projects-row{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+.project-tab-txt{
+  font-family: 'museomoderno thin';
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+/*PROJECT STYLES END*/
+
+
+
 
 
 
