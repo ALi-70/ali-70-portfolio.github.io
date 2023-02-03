@@ -54,11 +54,20 @@
 
   .srch-input{
     font-family: museomoderno;
+    border-radius: 50px;
+    background: #fff;
+    border-width: 2px;
+    color: #000;
 
   }
 
-  .srch-input .form-control:focus{
-    border-color: #C68B59;
+  .srch-input::placeholder{
+    color: #6c757d;
+  }
+
+  .srch-input:focus{
+    
+    box-shadow: none;
   }
 
   .bi-caret-down-fill{

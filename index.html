@@ -52,10 +52,12 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control srch-input mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-        <span><i class="fa fa-search" aria-hidden="true"></i></span>
-      </button>
+      <div class="input-group rounded-pill">
+                <input class="form-control py-2 border-right-0 border-white srch-input" type="search" placeholder="search" id="example-search-input">
+                <span class="input-group-append">
+                    <button type="submit" class="input-group-text text-black border-left-0 border-white srch-input"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
     </form>
   </div>
 </nav>
@@ -249,6 +251,15 @@
 <script>
 $(document).ready(function(){
   $('body').scrollspy({target: ".navbar", offset: 70});   
+});
+</script>
+
+
+<script>
+  $(function() {
+  $(document).click(function (event) {
+    $('.navbar-collapse').collapse('hide');
+  });
 });
 </script>
 
