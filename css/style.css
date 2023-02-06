@@ -31,7 +31,9 @@
 
 
   .ali-icon img{
-  width: 50px;
+  width: 57px;
+  padding: 0px;
+  margin: 0px;
   }
 
   .navbar-toggler{
@@ -95,6 +97,10 @@ background: linear-gradient(to right, #000000, #FF0000);*/
   /*text-transform: uppercase;*/
   font-weight: 700;
   
+}
+
+.intro-txt{
+  margin-top: 3rem;
 }
 
 
@@ -187,7 +193,255 @@ header p {
 /*PROJECT STYLES END*/
 
 
+/*ABOUT CODE START*/
+.skill-body {
+  width: 100vw;
+  height: 100vh;
+  /*background: #262626;*/  
+  /*background: url("img/about_bg_image.jpg");*/
+  background-image:linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), 
+  url("../img/about_bg_image_lap..jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  
 
+}
+
+.skills-box {
+  /*padding: 10px;*/
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.title-skills {
+  color: #fff;
+  font-weight: 700;
+  font-family:museomoderno;
+}
+
+.txt-skills{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 370;
+  font-family: museomoderno;
+}
+
+.progress-bar {
+  background: #404040;
+  border-radius: 3px;
+  width: 100%;
+  height: 15px;
+  margin-top: 5px;
+/*   overflow: hidden; */
+}
+
+.progress {
+/*   width: 0; */
+}
+
+#html .progress {
+  max-width: 80%;
+  height: 100%;
+  background: #ed2828;
+  border-radius: 3px;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#html .progress::after {
+  content: "90%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#html .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+#css .progress {
+  max-width: 70%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#css .progress::after {
+  content: "70%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#css .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+/*Bootstrap css skill*/
+#bs .progress {
+  max-width: 50%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#bs .progress::after {
+  content: "70%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#bs .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+
+#js .progress {
+  max-width: 60%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#js .progress::after {
+  content: "60%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#js .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+/*Photoshop skills css*/
+#ps .progress {
+  max-width: 50%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#ps .progress::after {
+  content: "60%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#ps .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+@keyframes loadBars{
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+  
+}
+
+
+/*ABOUT CODE END*/
 
 
 
