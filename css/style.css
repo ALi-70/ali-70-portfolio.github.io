@@ -1,3 +1,10 @@
+/*Main Webpage Container*/
+/*.main-box{
+  padding-left: 0px;
+  padding-right: 0px;
+}*/
+
+
 
 /*NAVBAR STYLES*/
 
@@ -195,7 +202,7 @@ header p {
 
 /*ABOUT CODE START*/
 .skill-body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   /*background: #262626;*/  
   /*background: url("img/about_bg_image.jpg");*/
@@ -207,6 +214,9 @@ header p {
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
+  margin-left: 0px;
+  margin-right: 0px;
+  
   
 
 }
@@ -247,201 +257,232 @@ header p {
 /*   overflow: hidden; */
 }
 
-.progress {
-/*   width: 0; */
+
+
+
+
+/*New Code */
+.skills {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(255, 255, 255, .2),rgba(255, 255, 255, .5));
+  border-radius: 10px;
+/*  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);*/
 }
 
-#html .progress {
-  max-width: 80%;
-  height: 100%;
-  background: #ed2828;
-  border-radius: 3px;
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: museomoderno;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+/*  color: #07374a;*/
+  color: #fff;
+}
+
+.skills-bar .bar .progress-line {
   position: relative;
-  animation: 1s ease 0s 1 loadBars; 
+  height: 10px;
+  width: 550px;
+/*  background: #f0f0f0;*/
+  background: #9fa6a1;
+/*  background: #bec4c0;*/
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-#html .progress::after {
-  content: "90%";
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  height: 15px;
-  width: 30px;
-  background: #fff;
+.bar .progress-line span {
   position: absolute;
-  padding: 2px 3px;
-  border-radius: 4px;
-  right: -18px;
-  top: -30px;
-}
-
-#html .progress::before {
-  content: "";
-  position: absolute;
-  width: 0; 
-  height: 0; 
-  right: -5px;
-  top: -12px;  
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #fff;
-}
-
-#css .progress {
-  max-width: 70%;
+/*  background: #25b79f;*/
+  background: #ff0000;
   height: 100%;
-  background: #ed2828;
-  position: relative;
-  animation: 1s ease 0s 1 loadBars; 
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transfrom = uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+  font-family: museomoderno;
 }
 
-#css .progress::after {
-  content: "70%";
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  height: 15px;
-  width: 30px;
-  background: #fff;
-  position: absolute;
-  padding: 2px 3px;
-  border-radius: 4px;
-  right: -18px;
-  top: -30px;
-}
-
-#css .progress::before {
-  content: "";
-  position: absolute;
-  width: 0; 
-  height: 0; 
-  right: -5px;
-  top: -12px;  
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #fff;
-}
-
-/*Bootstrap css skill*/
-#bs .progress {
-  max-width: 50%;
-  height: 100%;
-  background: #ed2828;
-  position: relative;
-  animation: 1s ease 0s 1 loadBars; 
-}
-
-#bs .progress::after {
-  content: "70%";
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  height: 15px;
-  width: 30px;
-  background: #fff;
-  position: absolute;
-  padding: 2px 3px;
-  border-radius: 4px;
-  right: -18px;
-  top: -30px;
-}
-
-#bs .progress::before {
-  content: "";
-  position: absolute;
-  width: 0; 
-  height: 0; 
-  right: -5px;
-  top: -12px;  
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #fff;
-}
-
-
-#js .progress {
-  max-width: 60%;
-  height: 100%;
-  background: #ed2828;
-  position: relative;
-  animation: 1s ease 0s 1 loadBars; 
-}
-
-#js .progress::after {
-  content: "60%";
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  height: 15px;
-  width: 30px;
-  background: #fff;
-  position: absolute;
-  padding: 2px 3px;
-  border-radius: 4px;
-  right: -18px;
-  top: -30px;
-}
-
-#js .progress::before {
-  content: "";
-  position: absolute;
-  width: 0; 
-  height: 0; 
-  right: -5px;
-  top: -12px;  
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #fff;
-}
-
-/*Photoshop skills css*/
-#ps .progress {
-  max-width: 50%;
-  height: 100%;
-  background: #ed2828;
-  position: relative;
-  animation: 1s ease 0s 1 loadBars; 
-}
-
-#ps .progress::after {
-  content: "60%";
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  height: 15px;
-  width: 30px;
-  background: #fff;
-  position: absolute;
-  padding: 2px 3px;
-  border-radius: 4px;
-  right: -18px;
-  top: -30px;
-}
-
-#ps .progress::before {
-  content: "";
-  position: absolute;
-  width: 0; 
-  height: 0; 
-  right: -5px;
-  top: -12px;  
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #fff;
-}
-
-@keyframes loadBars{
-  0% {
-    width: 0;
-  }
+@keyframes animate {
   100% {
-    width: 100%;
+    transform: scaleX(1);
   }
-  
 }
 
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .bootstrap {
+  width: 60%;
+}
+.progress-line .javascript {
+  width: 60%;
+}
+.progress-line .photoshop {
+  width: 70%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+/*  top: -28px;*/
+  top: -37px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #07374a;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "60%";
+}
+.progress-line .javascript::after {
+  content: "60%";
+}
+.progress-line .photoshop::after {
+  content: "70%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills{
+        width: 80%;
+    }
+
+    .skills-bar .bar .progress-line{
+        width: 100%;
+    }
+
+/*    .skills-txt{
+      font-size: 10px;
+    }*/
+}      
 
 /*ABOUT CODE END*/
+
+/*CONTACT STYLE START*/
+.contact{
+  cursor: pointer;
+/*  background-color: #6B062D;*/
+  /* Created with https://www.css-gradient.com */
+    background: #000000;
+    background: -webkit-linear-gradient(left, #000000, #FF0000);
+    background: -moz-linear-gradient(left, #000000, #FF0000);
+    background: linear-gradient(to right, #000000, #FF0000);
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.contact h1 {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.contact h2 {
+  opacity: .8;
+}
+.contact span {
+  display: block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin:auto;
+  border-radius:50%;  
+  font-size: 40px;
+  color: #FFFFFF;
+  opacity: 0.7;
+/*  background-color: #4C0822;*/
+  background: #000;
+/*  border: 2px solid #4C0822;*/
+  border: 2px solid #fff;
+
+  webkit-transition:all .5s ease;
+  moz-transition:all .5s ease;
+  os-transition:all .5s ease;
+  transition:all .5s ease;
+
+}
+.contact-item:hover span{
+  opacity: 1; 
+/*  border: 2px solid #CC0039;*/
+  border: 2px solid #fff;
+  font-size: 42px;
+  -webkit-transform: scale(1.1,1.1) rotate(360deg) ;
+  -moz-transform: scale(1.1,1.1) rotate(360deg) ;
+  -o-transform: scale(1.1,1.1) rotate(360deg) ;
+  transform: scale(1.1,1.1) rotate(360deg) ;
+}
+.contact-item:hover h2{
+  opacity: 1;
+  -webkit-transform: scale(1.1,1.1)  ;
+  -moz-transform: scale(1.1,1.1)  ;
+  -o-transform: scale(1.1,1.1)  ;
+  transform: scale(1.1,1.1) ;
+}
+.contact .lead{
+  color: #CC0039;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-lnks{
+  color: #fff;
+  font-family: museomoderno;
+}
+
+.contact-lnks:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-header{
+  color: #fff;
+  font-family: museomoderno;
+}
+ 
+/*CONTACT STYLE END*/
 
 
 
