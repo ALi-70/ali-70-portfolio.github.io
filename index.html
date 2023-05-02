@@ -24,6 +24,8 @@
 
 <body>
 
+<div id="preloader"></div>
+
 <div class="container-fluid m-0 p-0">
 <!-- NAVBAR Starts -->
 	<nav class="navbar navbar-heading navbar-expand-lg fixed-top text-white">
@@ -224,7 +226,7 @@
       </p>
   </div>
   
-  <div class="col-6 px-3">
+  <div class="col-6 px-3 position-relative">
     <div class="skills">
       <div class="skills-bar">
         <div class="bar">
@@ -410,7 +412,13 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+    var loader = document.getElementById("preloader");
 
+    window.addEventListener("load",function(){
+      loader.style.display="none";
+    })
+</script>
 
 </body>
 
