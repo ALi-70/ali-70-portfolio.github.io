@@ -22,11 +22,11 @@
 </style>
 </head>
 
-<body>
-
+<body onload="">
 <div id="preloader"></div>
 
-<div class="container-fluid m-0 p-0">
+
+<div class="container-fluid m-0 p-0" style="display: none;" id="fullpage">
 <!-- NAVBAR Starts -->
 	<nav class="navbar navbar-heading navbar-expand-lg fixed-top text-white">
   <div class="navbar-brand ali-icon">Ali Ahamed
@@ -414,9 +414,11 @@ $(document).ready(function(){
 
 <script>
     var loader = document.getElementById("preloader");
+    var page = document.getElementById("fullpage");
 
     window.addEventListener("load",function(){
       loader.style.display="none";
+      page.style.display="block";
     })
 </script>
 
